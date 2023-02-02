@@ -1,2 +1,4 @@
-package com.arjuncodes.JHHomeStayManagement.controller;public class HomeStayController {
+package com.arjuncodes.JHHomeStayManagement.controller;
+
+public class HomeStayController {
 }

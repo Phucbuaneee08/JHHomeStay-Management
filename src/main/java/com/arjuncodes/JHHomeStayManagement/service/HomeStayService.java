@@ -1,4 +1,8 @@
 package com.arjuncodes.JHHomeStayManagement.service;
 
-public interface CustomerService {
+import com.arjuncodes.JHHomeStayManagement.entities.HomeStay;
+
+public interface HomeStayService {
+    void deleteHomeStay(HomeStay homeStay);
+    HomeStay save(HomeStay homeStay);
 }
