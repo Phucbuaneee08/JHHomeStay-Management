@@ -8,6 +8,8 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Set;
+
 @Data
 @Table(name = "room")
 @Entity
@@ -27,4 +29,7 @@ public class Room {
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JoinColumn(name = "homestay_id",nullable = false )
     private HomeStay homeStay;
+
+    @ManyToMany(mappedBy = "rooms")
+    private Set<Event> events;
 }
